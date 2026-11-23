@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
             name: "Aegon I Targaryen",
             title: "The Conqueror",
             dragon: "Balerion",
-            image: "images/aegon1.jpg",
+            image: "aegon1.jpg",
             description: "The first Targaryen king to unite the Seven Kingdoms."
         },
 
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
             name: "Viserys I Targaryen",
             title: "King of the Andals",
             dragon: "Balerion",
-            image: "images/viserys1.jpg",
+            image: "viserys1.jpg",
             description: "The fifth Targaryen king of Westeros."
         },
 
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
             name: "Daemon Targaryen",
             title: "The Rogue Prince",
             dragon: "Caraxes",
-            image: "images/daemon.jpg",
+            image: "daemon.jpg",
             description: "The younger brother of King Viserys I and husband of Rhaenyra."
         },
 
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
             name: "Aemond Targaryen",
             title: "One-Eye",
             dragon: "Vhagar",
-            image: "images/aemond.jpg",
+            image: "aemond.jpg",
             description: "Prince of House Targaryen and rider of the mighty Vhagar."
         },
 
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
             name: "Aegon II Targaryen",
             title: "King of the Seven Kingdoms",
             dragon: "Sunfyre",
-            image: "images/aegon2.jpg",
+            image: "aegon2.jpg",
             description: "Son of Viserys I and Alicent Hightower."
         }
 
