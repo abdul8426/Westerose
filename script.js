@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const musicBtn = document.getElementById("musicBtn");
 
-    const backgroundMusic = new Audio("audio/got.mp3");
+    const backgroundMusic = new Audio("got.mp3");
 
     backgroundMusic.loop = true;
     backgroundMusic.volume = 0.5;
