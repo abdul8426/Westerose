@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
             name: "Rhaenyra Targaryen",
             title: "The Realm's Delight",
             dragon: "Syrax",
-            image: "images/rhaenyra.jpg",
+            image: "rhaenyra.jpg",
             description: "The firstborn child of King Viserys I and a claimant to the Iron Throne."
         },
 
