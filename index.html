@@ -1,0 +1,718 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Realm of Westeros | Targaryen Dynasty</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=MedievalSharp&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="navbar">
+
+        <div class="logo">
+            🐉 <span>REALMS OF WESTEROS</span>    
+        </div>
+
+        <nav>
+            <a href="#home">Home</a> 
+            <a href="#houses">Houses</a>
+            <a href="#targaryens">Targaryens</a>
+            <a href="#dragons">Dragons</a>
+            <a href="#timeline">Timeline</a>
+            <a href="#map">Westeros</a>
+        </nav>
+
+        <button class="music-btn" id="musicBtn">  
+            🔇
+        </button>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+    <main>
+
+        <!-- ==============================
+     WESTEROS SEARCH
+================================ -->
+
+<section id="search" class="section">
+
+    <div class="section-title">
+
+        <p>EXPLORE THE WORLD</p>
+
+        <h2>SEARCH WESTEROS</h2>
+
+        <span></span>
+
+    </div>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search Daemon, Rhaenyra, Vhagar, Stark..."   
+            autocomplete="off"
+        >
+
+        <button id="searchButton">   
+            🔍 SEARCH    
+        </button>
+
+    </div>
+
+    <div id="searchResults" class="search-results"></div>
+
+</section>
+
+
+</section>
+
+        <section id="home" class="hero">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="subtitle">
+                    FIRE • BLOOD • HONOR • POWER
+                </p>
+
+                <h1>
+                    THE REALMS<br>
+                    OF <span>WESTEROS</span>
+                </h1>
+
+                <p class="description">
+                    Enter a world of kings, queens, dragons,
+                    ancient houses and legendary battles.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#houses" class="btn primary-btn">
+                        ENTER THE REALM
+                    </a>
+
+                    <a href="#targaryens" class="btn secondary-btn">
+                        EXPLORE TARGARYENS
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HOUSES ================= -->
+        <section id="houses" class="section">
+
+            <div class="section-title">
+                <p>THE GREAT</p>
+                <h2>HOUSES OF WESTEROS</h2>
+                <span></span>
+            </div>
+
+            <div class="houses-container">
+
+                <div class="house-card" data-house="Targaryen">
+                    <div class="house-symbol">🐉</div>
+                    <h3>House Targaryen</h3>
+                    <p>Fire and Blood</p>
+                </div>
+
+                <div class="house-card" data-house="Stark">
+                    <div class="house-symbol">🐺</div>
+                    <h3>House Stark</h3>
+                    <p>Winter Is Coming</p>
+                </div>
+
+                <div class="house-card" data-house="Lannister">
+                    <div class="house-symbol">🦁</div>
+                    <h3>House Lannister</h3>
+                    <p>Hear Me Roar</p>
+                </div>
+
+                <div class="house-card" data-house="Baratheon">
+                    <div class="house-symbol">🦌</div>
+                    <h3>House Baratheon</h3>
+                    <p>Ours Is the Fury</p>
+                </div>
+
+                <div class="house-card" data-house="Tyrell">
+                    <div class="house-symbol">🌹</div>
+                    <h3>House Tyrell</h3>
+                    <p>Growing Strong</p>
+                </div>
+
+                <div class="house-card" data-house="Martell">
+                    <div class="house-symbol">☀️</div>
+                    <h3>House Martell</h3>
+                    <p>Unbowed, Unbent, Unbroken</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TARGARYEN ================= -->
+        <section id="targaryens" class="section dark-section">
+
+            <div class="section-title">
+                <p>THE BLOOD OF THE DRAGON</p>
+                <h2>HOUSE TARGARYEN</h2>
+                <span></span>
+            </div>
+
+            <div class="targaryen-content">
+
+                <div class="targaryen-text">
+
+                    <h3>FIRE AND BLOOD</h3>
+
+                    <p>
+                        From the ancient Valyrian bloodline to the
+                        conquest of Westeros, the Targaryen dynasty
+                        shaped the history of the Seven Kingdoms.
+                    </p>
+
+                    <button class="btn primary-btn">
+                        DISCOVER THE DYNASTY
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- TARGARYEN CHARACTER EXPLORER -->
+
+            <div class="character-title">
+              <h3>THE BLOOD OF THE DRAGON</h3>
+              <p>Explore the legendary members of House Targaryen</p>
+        </div>
+
+       <div id="targaryenCharacters" class="character-container"></div>
+
+
+       <!-- ==============================
+     TARGARYEN FAMILY TREE
+================================= -->
+
+<div class="family-tree-section">
+
+    <div class="character-title">
+
+        <h3>THE TARGARYEN BLOODLINE</h3>
+
+        <p>
+            A dynasty shaped by fire, blood and dragons.
+        </p>
+
+    </div>
+
+    <div class="family-tree">
+
+        <div class="family-generation">
+
+            <div class="family-card">
+                <span>👑</span>
+                <h4>Jaehaerys I</h4>
+                <p>The Conciliator</p>
+            </div>
+
+            <div class="family-card">
+                <span>👑</span>
+                <h4>Alysanne</h4>
+                <p>The Good Queen</p>
+            </div>
+
+        </div>
+
+
+        <div class="tree-line"></div>
+
+
+        <div class="family-generation">
+
+            <div class="family-card">
+
+                <span>👑</span>
+
+                <h4>Baelon</h4>
+
+                <p>Prince of Dragonstone</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="tree-line"></div>
+
+
+        <div class="family-generation">
+
+            <div class="family-card">
+
+                <span>👑</span>
+
+                <h4>Viserys I</h4>
+
+                <p>King of the Seven Kingdoms</p>
+
+            </div>
+
+
+            <div class="family-card" >
+
+                <span>👑</span>
+
+                <h4>Daemon</h4>
+
+                <p>The Rogue Prince</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="tree-line"></div>
+
+
+        <div class="family-generation">
+
+            <div class="family-card">
+
+                <span>👸</span>
+
+                <h4>Rhaenyra</h4>
+
+                <p>The Realm's Delight</p>
+
+            </div>
+
+
+            <div class="family-card">
+
+                <span>👑</span>
+
+                <h4>Aegon II</h4>
+
+                <p>King of Westeros</p>
+
+            </div>
+
+
+            <div class="family-card">
+
+                <span>👁️</span>
+
+                <h4>Aemond</h4>
+
+                <p>One-Eye</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+        </section>
+
+
+        <!-- ================= DRAGONS ================= -->
+        <section id="dragons" class="section">
+
+            <div class="section-title">
+                <p>THE BEASTS OF FIRE</p>
+                <h2>DRAGONS</h2>
+                <span></span>
+            </div>
+
+            <div class="dragon-container" id="dragonContainer">
+
+            </div>
+
+        </section>
+
+        <!-- =================
+     TIMELINE SECTION
+================================= -->
+
+<section id="timeline" class="section">
+
+    <div class="timeline-header">
+
+        <p>THE HISTORY OF WESTEROS</p>
+
+        <h2>A SONG OF FIRE AND BLOOD</h2>
+
+        <span></span>
+
+    </div>
+
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot">
+                🔥
+            </div>
+
+            <div class="timeline-card">
+
+                <span>2 BC</span>
+
+                <h3>Aegon's Conquest</h3>
+
+                <p>
+                    Aegon I Targaryen begins the conquest
+                    of Westeros and creates the Iron Throne.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot">
+                👑
+            </div>
+
+            <div class="timeline-card">
+
+                <span>37 AC</span>
+
+                <h3>Jaehaerys I</h3>
+
+                <p>
+                    The Conciliator becomes king and brings
+                    a long period of peace to the realm.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot">
+                🐉
+            </div>
+
+            <div class="timeline-card">
+
+                <span>129 AC</span>
+
+                <h3>The Dance of the Dragons</h3>
+
+                <p>
+                    Rhaenyra and Aegon II fight for the
+                    Iron Throne in a devastating Targaryen civil war.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot">
+                ⚔️
+            </div>
+
+            <div class="timeline-card">
+
+                <span>282 AC</span>
+
+                <h3>Robert's Rebellion</h3>
+
+                <p>
+                    Robert Baratheon rebels against the
+                    Targaryen dynasty.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot">
+                🐺
+            </div>
+
+            <div class="timeline-card">
+
+                <span>298 AC</span>
+
+                <h3>The Game of Thrones</h3>
+
+                <p>
+                    The great houses struggle for power
+                    while an ancient threat rises in the North.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+        </section>
+
+
+        <!-- ================= MAP ================= -->
+        <section id="map" class="section map-section">
+
+            <div class="section-title">
+                <p>THE SEVEN KINGDOMS</p>
+                <h2>WESTEROS</h2>
+                <span></span>
+            </div>
+
+            <div class="westeros-map">
+
+    <div class="map-title">
+        <h3>EXPLORE WESTEROS</h3>
+        <p>Choose a realm to discover its history</p>
+    </div>
+
+
+    <div class="map-locations">
+
+        <button class="location"
+                data-location="Winterfell">
+            🐺
+            <span>Winterfell</span>
+        </button>
+
+
+        <button class="location"
+                data-location="Dragonstone">
+            🐉
+            <span>Dragonstone</span>
+        </button>
+
+
+        <button class="location"
+                data-location="Kings Landing">
+            👑
+            <span>King's Landing</span>
+        </button>
+
+
+        <button class="location"
+                data-location="Casterly Rock">
+            🦁
+            <span>Casterly Rock</span>
+        </button>
+
+
+        <button class="location"
+                data-location="Highgarden">
+            🌹
+            <span>Highgarden</span>
+        </button>
+
+
+        <button class="location"
+                data-location="Sunspear">
+            ☀️
+            <span>Sunspear</span>
+        </button>
+
+    </div>
+
+</div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <h2>REALMS OF WESTEROS</h2>
+
+        <p>
+            Fire and Blood • Winter Is Coming • Hear Me Roar
+        </p>
+
+        <p class="copyright">
+            © 2026 Realms of Westeros
+        </p>
+
+    </footer>
+
+
+
+    <!-- CHARACTER MODAL -->
+
+<div id="characterModal" class="character-modal">
+
+    <div class="modal-content">
+
+        <button id="closeModal" class="close-modal">
+            ×
+        </button>
+
+        <div class="modal-dragon">
+            🐉
+        </div>
+
+        <h2 id="modalName"></h2>
+
+        <h3 id="modalTitle"></h3>
+
+        <p id="modalDragon"></p>
+
+        <p id="modalDescription"></p>
+
+    </div>
+
+</div>
+
+
+<!-- HOUSE MODAL -->
+
+<div id="houseModal" class="character-modal">
+
+    <div class="modal-content">
+
+        <button id="closeHouseModal" class="close-modal">
+            ×
+        </button>
+
+        <div id="houseModalSymbol" class="modal-dragon">
+            🏰
+        </div>
+
+        <h2 id="houseModalName"></h2>
+
+        <h3 id="houseModalWords"></h3>
+
+        <p id="houseModalSeat"></p>
+
+        <p id="houseModalDescription"></p>
+
+    </div>
+
+</div>
+
+
+
+<!-- DRAGON MODAL -->
+
+<div id="dragonModal" class="character-modal">
+
+    <div class="modal-content">
+
+        <button id="closeDragonModal" class="close-modal">
+            ×
+        </button>
+
+        <div class="modal-dragon">
+            🐉
+        </div>
+
+        <h2 id="dragonModalName"></h2>
+
+        <h3 id="dragonModalTitle"></h3>
+
+        <p id="dragonModalRider"></p>
+
+        <p id="dragonModalDescription"></p>
+
+    </div>
+
+</div>
+
+
+
+<!-- LOCATION MODAL -->
+
+<div id="locationModal" class="character-modal">
+
+    <div class="modal-content">
+
+        <button id="closeLocationModal"
+                class="close-modal">
+            ×
+        </button>
+
+        <div id="locationModalSymbol"
+             class="modal-dragon">
+            🗺️
+        </div>
+
+        <h2 id="locationModalName"></h2>
+
+        <h3 id="locationModalHouse"></h3>
+
+        <p id="locationModalDescription"></p>
+
+    </div>
+
+</div>
+
+
+
+<!-- TIMELINE EVENT MODAL -->
+
+<div id="timelineModal" class="character-modal">
+
+    <div class="modal-content">
+
+        <button id="closeTimelineModal"
+                class="close-modal">
+            ×
+        </button>
+
+        <div id="timelineModalIcon"
+             class="modal-dragon">
+            📜
+        </div>
+
+        <h2 id="timelineModalTitle"></h2>
+
+        <h3 id="timelineModalYear"></h3>
+
+        <p id="timelineModalDescription"></p>
+
+    </div>
+
+</div>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
